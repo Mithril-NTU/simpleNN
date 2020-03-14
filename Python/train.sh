@@ -28,10 +28,10 @@ do
 		do
 			for c in 0.01 0.1 0.001
 			do
-            	cmd="${train_cmd} --seed ${i}"
-            	cmd="${cmd} --lr ${lr}"
-            	cmd="${cmd} --bsize ${bs}"
-            	cmd="${cmd} --C ${c}"
+				cmd="${train_cmd} --seed ${i}"
+				cmd="${cmd} --lr ${lr}"
+				cmd="${cmd} --bsize ${bs}"
+				cmd="${cmd} --C ${c}"
 				cmd="${cmd} --model ./${model_path}/${i}_${lr}_${bs}_${c}/model.ckpt"
 				cmd="${cmd} --log ./${model_path}/${i}_${lr}_${bs}_${c}/logger.log"
 				echo ${cmd}
